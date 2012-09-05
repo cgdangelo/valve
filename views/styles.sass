@@ -37,6 +37,7 @@ a
 ul.nav > li
   display: inline
   margin-right: 15px
+  position: relative
 
 ul.nav > li > a
   text-transform: uppercase
@@ -58,7 +59,11 @@ ul.nav > li > .popout
   position: absolute
   padding: 10px
   width: 150px
-  background: rgba(0, 0, 0, 0.7)
+  background: rgba(0, 0, 0, 0.85)
+  z-index: 90
+  -webkit-box-shadow: 0 5px 20px #000
+  -moz-box-shadow: 0 5px 20px #000
+  box-shadow: 0 5px 20px #000
 
 ul.nav > li:hover > .popout
   display: block
@@ -103,3 +108,10 @@ ul.nav > li > .popout > a
 #slider-controls > a.active
   background: #a1251e 
   border: 2px solid #a1251e
+
+i.external
+  background: url(/images/external.gif)
+  height: 8px
+  width: 8px
+  padding-bottom: 1px
+  display: inline-block

@@ -13,8 +13,20 @@
 
         %ul.nav
           %li
-            %a{ :href => "/" }
+            %a#games{ :href => "/" }
               Games
+            .popout
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
+              %a{ :href => "/" } Test
           %li
             %a{ :href => "/" }
               Steam&reg;
@@ -33,3 +45,5 @@
 
     .content
       = yield
+
+%script{ :src => "/js/nav.js" }

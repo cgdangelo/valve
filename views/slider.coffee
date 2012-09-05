@@ -27,12 +27,21 @@ switchSlide = (elementId, element) ->
 slider = window.setInterval(cycleSlide, 3000)
 
 bindResetters = ->
+  slidesContainer = document.getElementById('slides')
   controlContainer = document.getElementById('slider-controls')
+
   for element in controlContainer.children
     do (element) ->
       element.addEventListener 'click', ->
         switchSlide(element.attributes['data-target'].nodeValue, element)
         window.clearInterval(slider)
         slider = window.setInterval(cycleSlide, 3000)
+
+  for element in slidesContainer.children
+    do (element) ->
+        element.addEventListener 'mouseover', ->
+            window.clearInterval(slider)
+        element.addEventListener 'mouseout', ->
+            slider = window.setInterval(cycleSlide, 3000)
  
 bindResetters()

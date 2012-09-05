@@ -4,7 +4,6 @@ showMenu = (menu) ->
   element = document.getElementById(menu)
   popoutElement = element.getElementsByClassName('popout')[0]
   popoutElement.style.display = 'block'
-  popoutElement.style.opacity = '0.8'
   element.getElementsByTagName('a')[0].style.background = '#a1251e'
 
 hideMenu = (menu) ->

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 %html
   %head
     %title
@@ -6,7 +7,29 @@
   %body
     .header
       .wrapper
-        %a{ :href => "/" }
-          %img{ :src => "/images/header_logo.png", :alt => "Valve" }
+        .brand
+          %a{ :href => "/" }
+            %img{ :src => "/images/header_logo.png", :alt => "Valve" }
+
+        %ul.nav
+          %li
+            %a{ :href => "/" }
+              Games
+          %li
+            %a{ :href => "/" }
+              Steam&reg;
+          %li
+            %a{ :href => "/" }
+              Company
+          %li
+            %a{ :href => "/" }
+              Jobs
+          %li
+            %a{ :href => "/" }
+              News
+          %li
+            %a{ :href => "/" }
+              Contact
+
     .content
       = yield

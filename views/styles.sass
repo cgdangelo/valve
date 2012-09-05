@@ -2,6 +2,7 @@
 
 body
   background: #000
+  font: 12px/1.25em Helvetica,Arial,sans-serif
 
 .header
   width: 100%
@@ -10,6 +11,14 @@ body
   background: -webkit-linear-gradient(right, #000, #000, #312d25, #312d25, #312d25, #312d25, #000, #000)
   background: linear-gradient(right, #000, #000, #312d25, #312d25, #312d25, #312d25, #000, #000)
 
+a:hover
+  color: #e1e1e1
+  text-decoration: underline
+
+a
+  color: #e1e1e1
+  text-decoration: none
+
 .wrapper
   margin: auto
   width: 900px
@@ -17,3 +26,27 @@ body
 .header > .wrapper
   height: 100%
   padding: 9px 0
+
+.header .brand
+  float: left
+
+.header ul.nav
+  padding: 14px 0 0 14px
+  float: left
+
+ul.nav > li
+  display: inline
+  margin-right: 15px
+
+ul.nav > li > a
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 15px
+  font-weight: bold
+  text-shadow: #000 1px 1px 6px 
+  color: #b9b9b9
+  padding: 3px 
+
+ul.nav > li > a:hover
+  text-decoration: none
+  background: maroon

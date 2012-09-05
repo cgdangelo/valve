@@ -1,23 +1,24 @@
 #slider
-  #slide1.slide
-    %img{ :src => "/images/slider/slide_intl_2012.jpg" }
-  #slide2.slide
-    %img{ :src => "/images/slider/slide_p2.jpg" }
-  #slide3.slide
-    %img{ :src => "/images/slider/slide_l4d2.jpg" }
-  #slide4.slide
-    %img{ :src => "/images/slider/slide_tf2.jpg" }
-  #slide5.slide
-    %img{ :src => "/images/slider/slide_ep2.jpg" }
-  #slide6.slide
-    %img{ :src => "/images/slider/slide_css.jpg" }
+  #slides
+    #slide1.slide.active
+      %img{ :src => "/images/slider/slide_intl_2012.jpg" }
+    #slide2.slide
+      %img{ :src => "/images/slider/slide_p2.jpg" }
+    #slide3.slide
+      %img{ :src => "/images/slider/slide_l4d2.jpg" }
+    #slide4.slide
+      %img{ :src => "/images/slider/slide_tf2.jpg" }
+    #slide5.slide
+      %img{ :src => "/images/slider/slide_ep2.jpg" }
+    #slide6.slide
+      %img{ :src => "/images/slider/slide_css.jpg" }
 
   #slider-controls
-    %a.active{ :href => "#slide1" }
-    %a{ :href => "#slide1" }
-    %a{ :href => "#slide1" }
-    %a{ :href => "#slide1" }
-    %a{ :href => "#slide1" }
-    %a{ :href => "#slide1" }
+    %a.active{ :"data-target" => "slide1" }
+    %a{ :"data-target" => "slide2" }
+    %a{ :"data-target" => "slide3" }
+    %a{ :"data-target" => "slide4" }
+    %a{ :"data-target" => "slide5" }
+    %a{ :"data-target" => "slide6" }
 
 %script{ :src => "/js/slider.js" }

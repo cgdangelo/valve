@@ -16,3 +16,8 @@ get '/js/nav.js' do
   content_type 'text/javascript'
   coffee :nav
 end
+
+get '/js/slider.js' do
+  content_type 'text/javascript'
+  coffee :slider
+end

@@ -1,0 +1,2 @@
+sliderElement = document.getElementById('slider')
+

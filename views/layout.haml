@@ -16,17 +16,24 @@
             %a{ :href => "/" }
               Games
             .popout
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
-              %a{ :href => "/" } Test
+              %a{ :href => "http://www.valvesoftware.com/games/" } About Valve Games
+              .divider
+              %a{ :href => "http://www.valvesoftware.com/games/dota2.html" } Dota 2
+              %a{ :href => "http://www.valvesoftware.com/games/portal2.html" } Portal 2
+              %a{ :href => "http://www.valvesoftware.com/games/l4d2.html" } Left 4 Dead 2
+              %a{ :href => "http://www.valvesoftware.com/games/l4d.html" } Left 4 Dead
+              %a{ :href => "http://www.valvesoftware.com/games/ep2.html" } Half-Life 2: Episode Two
+              %a{ :href => "http://www.valvesoftware.com/games/portal.html" } Portal
+              %a{ :href => "http://www.valvesoftware.com/games/tf2.html" } Team Fortress 2
+              %a{ :href => "http://www.valvesoftware.com/games/ep1.html" } Half-Life 2: Episode One
+              %a{ :href => "http://www.valvesoftware.com/games/dods.html" } Day of Defeat: Source
+              %a{ :href => "http://www.valvesoftware.com/games/css.html" } Counter-Strike: Source
+              %a{ :href => "http://www.valvesoftware.com/games/hl2.html" } Half-Life 2
+              %a{ :href => "http://www.valvesoftware.com/games/backcatalog.html" } Valve Back Catalog
+              .divider
+              %a{ :href => "http://source.valvesoftware.com/" } 
+                Source Engine 
+                %img{ :src => "/images/external.gif", :border => "0" } 
           %li
             %a{ :href => "/" }
               Steam&reg;
@@ -43,7 +50,7 @@
             %a{ :href => "/" }
               Contact
 
-    .content
+    .content.wrapper
       = yield
 
 %script{ :src => "/js/nav.js" }

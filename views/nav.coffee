@@ -1,3 +1,11 @@
+getElementsByClassName = (elm, className) ->
+  if elm.getElementsByClassName then elm.getElementsByClassName(className)
+  else return elm.querySelectorAll(className)
+
+addEventListener = (elm, event, callback) ->
+  if elm.addEventListener then elm.addEventListener(event, callback)
+  else elm.attachEvent(event, callback)
+
 menus = ["games"]
 
 showMenu = (menu) ->
